@@ -1,0 +1,6 @@
+Install docker -
+
+docker pull redis  -> downloads the container and all required dependencies on docker.
+docker run -p 6379:6379 --name redisName redis -> runs redis instance called redisName on port 6379
+exec -it redisname /bin/bash -> if you need to execute any commands on the redis instance
+
