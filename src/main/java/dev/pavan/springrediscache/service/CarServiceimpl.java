@@ -18,6 +18,7 @@ public class CarServiceimpl implements CarService{
 
     //Constructor Injection
     public CarServiceimpl(CarRepository carRepository) {
+
         this.carRepository = carRepository;
     }
 
@@ -34,7 +35,7 @@ public class CarServiceimpl implements CarService{
 
     @Override
     public Car saveCar(Car car) {
-       Car savedCar     = carRepository.save(car);
+       Car savedCar = carRepository.save(car);
         return savedCar;
     }
 }
